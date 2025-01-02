@@ -76,7 +76,7 @@ Object.keys(contractNetworks).map((network) => {
     return;
   }
   const viemChain = Object.values(chains).find(
-    (chain) => chain.id.toString() === network,
+    (chain) => chain.id.toString() === network
   );
 
   if (!viemChain) {
