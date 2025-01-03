@@ -22,7 +22,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --base=/smol-safe/",
+    "build": "tsc && vite build",
+    "build:gh-pages": "tsc && vite build --base=/smol-safe/",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prettier": "prettier src/ --write",

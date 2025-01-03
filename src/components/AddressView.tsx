@@ -1,4 +1,11 @@
-import { goerli, mainnet, optimism, zora, zoraTestnet } from "viem/chains";
+import {
+  goerli,
+  mainnet,
+  optimism,
+  plume,
+  zora,
+  zoraTestnet,
+} from "viem/chains";
 import { useOutletContext } from "react-router-dom";
 import { NetworkContext } from "./Contexts";
 
@@ -8,6 +15,7 @@ export const networkToExplorer = {
   [goerli.id]: "https://goerli.etherscan.io/",
   [zoraTestnet.id]: "https://testnet.explorer.zora.energy/",
   [optimism.id]: "https://optimistic.etherscan.io/",
+  [plume.id]: "https://phoenix-explorer.plumenetwork.xyz/",
 };
 
 export const AddressView = ({
